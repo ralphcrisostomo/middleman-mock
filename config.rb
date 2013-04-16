@@ -1,3 +1,7 @@
+require "lib/ruby/custom_helpers"
+helpers CustomHelpers
+
+
 ###
 # Compass
 ###
@@ -5,6 +9,7 @@
 # Susy grids in Compass
 # First: gem install susy
 require 'susy'
+
 
 # Change Compass configuration
 # compass_config do |config|
@@ -41,11 +46,13 @@ require 'susy'
 # activate :automatic_image_sizes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
+#helpers do
 #   def some_helper
 #     "Helping"
 #   end
-# end
+#end
+
+#static C = 10
 
 set :css_dir, 'stylesheets'
 
