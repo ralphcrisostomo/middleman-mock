@@ -4,7 +4,7 @@ module CustomHelpers
   end
 
   def get_path_templates
-    '../lib/templates'
+    'templates'
   end
 
   def get_path_partials
@@ -12,6 +12,6 @@ module CustomHelpers
   end
 
   def get_path_modules
-    get_path_partials + '/modules'
+    get_path_templates + '/modules'
   end
 end
